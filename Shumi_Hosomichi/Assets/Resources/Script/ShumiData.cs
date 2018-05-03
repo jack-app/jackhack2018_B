@@ -13,6 +13,6 @@ public class ShumiData : ScriptableObject {
         public string shumi_name;
         public string shumi_header;
         public Sprite shumi_image;
-        public string shumi_content;
+        public TextAsset shumi_content;
     }
 }
