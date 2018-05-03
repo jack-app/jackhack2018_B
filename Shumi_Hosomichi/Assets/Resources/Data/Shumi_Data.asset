@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf6c6c828d11df94b8d44dc375af4007, type: 3}
+  m_Name: Shumi_Data
+  m_EditorClassIdentifier: 
+  shumi_records:
+  - shumi_name: "\u8DA3\u5473\u540D"
+    shumi_header: "\u8DA3\u5473\u540D\u3092\u8003\u3048\u308B\u8DA3\u5473\u304C\u3042\u308B\u3093\u3060\u3063\u3066\u3088\uFF01\uFF01\u30DE\u30B8\u304B\u3088\u30D1\u30CD\u30A7\u306A\uFF01\uFF01"
+    shumi_image: {fileID: 21300000, guid: 9215a8bb55c634746b80bf78c5851014, type: 3}
+    shumi_content: {fileID: 4900000, guid: cd4caeec668aa984092c7337fd3db27f, type: 3}
+  - shumi_name: "\u7761\u7720"
+    shumi_header: "\u7761\u7720\u306F\u3060\u308C\u3082\u304C\u3057\u305F\u3053\u3068\u3042\u308B\u8DA3\u5473\u3060\u3051\u3069\u3001\u8DA3\u5473\u3063\u3066\u540D\u4E57\u3063\u305F\u3053\u3068\u3042\u308B\u4EBA\u3044\u308B\uFF1F"
+    shumi_image: {fileID: 21300000, guid: 9215a8bb55c634746b80bf78c5851014, type: 3}
+    shumi_content: {fileID: 4900000, guid: 39737adcc6cd41349836e4b5b09b7440, type: 3}
+  - shumi_name: "\u30AA\u30FC\u30D7\u30F3\u30B3\u30FC\u30E9"
+    shumi_header: "\u30B3\u30AB\u30B3\u30FC\u30E9\u306E\u6750\u6599\u540D\u306F\u5B9F\u306F\u660E\u304B\u3055\u308C\u3066\u307E\u305B\u3093\u3002\u81EA\u5206\u3060\u3051\u306E\u30B3\u30FC\u30E9\u3092\u4F5C\u3063\u3066\u307F\u307E\u305B\u3093\u304B\uFF1F"
+    shumi_image: {fileID: 21300000, guid: 9215a8bb55c634746b80bf78c5851014, type: 3}
+    shumi_content: {fileID: 4900000, guid: 63f6a05c393dd80438b55ff24a1f28d1, type: 3}
