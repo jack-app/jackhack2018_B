@@ -305,10 +305,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 536351958}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70be4683e4c229746ad1219d9554ad40, type: 3}
+  m_Script: {fileID: 11500000, guid: ed8eaa6a9921cb246884fa609b720a3b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  textAsset: {fileID: 4900000, guid: cd4caeec668aa984092c7337fd3db27f, type: 3}
 --- !u!114 &536351961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -502,6 +501,7 @@ GameObject:
   - component: {fileID: 939732427}
   - component: {fileID: 939732429}
   - component: {fileID: 939732428}
+  - component: {fileID: 939732430}
   m_Layer: 5
   m_Name: ShumiNameText
   m_TagString: Untagged
@@ -566,6 +566,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 939732426}
+--- !u!114 &939732430
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 939732426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8eaa6a9921cb246884fa609b720a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1131010494
 GameObject:
   m_ObjectHideFlags: 0
@@ -826,6 +837,7 @@ GameObject:
   - component: {fileID: 1381090186}
   - component: {fileID: 1381090188}
   - component: {fileID: 1381090187}
+  - component: {fileID: 1381090189}
   m_Layer: 5
   m_Name: ShumiMidashiText
   m_TagString: Untagged
@@ -890,6 +902,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1381090185}
+--- !u!114 &1381090189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1381090185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed8eaa6a9921cb246884fa609b720a3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384069615
 GameObject:
   m_ObjectHideFlags: 0
