@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 24248a69ad8463e45b9fedf0c6ae689c
+timeCreated: 1525436947
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: syunka2bb
+  fontNames:
+  - syunka2bb
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
