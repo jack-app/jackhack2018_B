@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MovePanel : MonoBehaviour {
+public class ChangeScene_no : MonoBehaviour {
 
 	// Use this for initialization
-	public void slidepanel () {
-        this.transform.localPosition += new Vector3(-1500, 0, 0);
+	public void SceneLoad () {
+        Application.LoadLevel("No_Shumi_Menu");
 	}
 	
 	// Update is called once per frame
