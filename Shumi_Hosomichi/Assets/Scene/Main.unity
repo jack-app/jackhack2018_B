@@ -712,7 +712,7 @@ MonoBehaviour:
   timerParent: {fileID: 1237200031}
   ShumiNumText: {fileID: 377170928}
   shumiData: {fileID: 11400000, guid: 8c12a6bfa2007ef43b3f81e2e4d7f273, type: 2}
-  time: 5
+  time: 3.6
 --- !u!1 &1655034212
 GameObject:
   m_ObjectHideFlags: 0
