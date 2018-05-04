@@ -11,11 +11,6 @@ public class ShowShumi : MonoBehaviour {
     public RectTransform contentTransform;
     static int shumi_number = 0;
 
-    void OnEnable()
-    {
-        shumi_number = 0;
-    }
-
 	// Use this for initialization
 	void Start () {
         ShumiData.ShumiRecord shumi_record = shumi_data.shumi_records[shumi_number];
@@ -30,5 +25,10 @@ public class ShowShumi : MonoBehaviour {
     public int GetShumiNumber()
     {
         return shumi_number;
+    }
+
+    public static void SetShumiNumber()
+    {
+        shumi_number = 0;
     }
 }

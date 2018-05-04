@@ -671,9 +671,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f2688dbddb84d94ab29eb73dd0783e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _inputField: {fileID: 0}
-  ConsoleText: {fileID: 761006324}
-  ScrollRect: {fileID: 254841883}
 --- !u!1 &436996039
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +754,7 @@ GameObject:
   - component: {fileID: 470476877}
   - component: {fileID: 470476876}
   - component: {fileID: 470476875}
+  - component: {fileID: 470476878}
   m_Layer: 5
   m_Name: BackButton
   m_TagString: Untagged
@@ -821,7 +819,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 470476876}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 470476878}
+        m_MethodName: SceneLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &470476876
@@ -857,6 +866,17 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 470476873}
+--- !u!114 &470476878
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470476873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410ad1f5f16a4344dbf39644b7ef9d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &744228175
 GameObject:
   m_ObjectHideFlags: 0

@@ -14,6 +14,11 @@ public class TransShumi : MonoBehaviour {
     public float time = 5f;
     bool goflag = true;
 
+    void Awake()
+    {
+        ShowShumi.SetShumiNumber();
+    }
+
     void Start()
     {
         ShumiNumText.text = (GetComponentInChildren<ShowShumi>().GetShumiNumber()) + "/" + shumiData.shumi_records.Count;
