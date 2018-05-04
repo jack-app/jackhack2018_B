@@ -8,6 +8,7 @@ public class SetTextScript : MonoBehaviour {
 	public void SetText(TextAsset asset)
     {
         gameObject.GetComponent<Text>().text = asset.text;
+        gameObject.GetComponent<Text>().rectTransform.sizeDelta = new Vector2(gameObject.GetComponent<Text>().rectTransform.sizeDelta.x, gameObject.GetComponent<Text>().preferredHeight);
     }
 
     public void SetText(string text)
