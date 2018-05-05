@@ -6,8 +6,23 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scene/Title.unity
+    guid: 976595ec317ee4805bd1a197cd7ebe26
+  - enabled: 1
     path: Assets/Scene/SignUp.unity
     guid: 43eaca33a2741a44ebe7c73bdde78123
   - enabled: 1
     path: Assets/Scene/No_Shumi_Menu.unity
     guid: 2b17d19e667974ea396fc119830ae69e
+  - enabled: 1
+    path: Assets/Scene/shumi_menu.unity
+    guid: ce8deae5d0657144c88ab418cc515c84
+  - enabled: 1
+    path: Assets/Scene/Chat.unity
+    guid: be5f31844145bce4eb0e451ce735efed
+  - enabled: 1
+    path: Assets/Scene/Main.unity
+    guid: 482ef7343aa96c948b27bbd206b188dd
+  - enabled: 1
+    path: Assets/Scene/CreateShumi.unity
+    guid: d7bd6246069d627499c304d0f2ab843e

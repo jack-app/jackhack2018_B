@@ -26,4 +26,9 @@ public class ShowShumi : MonoBehaviour {
     {
         return shumi_number;
     }
+
+    public static void SetShumiNumber()
+    {
+        shumi_number = 0;
+    }
 }

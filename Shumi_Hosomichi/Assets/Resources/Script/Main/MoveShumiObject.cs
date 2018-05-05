@@ -10,16 +10,22 @@ public class MoveShumiObject : MonoBehaviour {
 
     public void MoveAnimation()
     {
-        canvas.GetComponent<Animator>().SetBool("ClearStatus", true);
+        if(canvas != null)
+        {
+            canvas.GetComponent<Animator>().SetBool("ClearStatus", true);
+            canvas.GetComponent<TransShumi>().SetGoFlag(false);
+        }
         GetComponent<Animator>().SetBool("UpFlag", true);
-        canvas.GetComponent<TransShumi>().SetGoFlag(false);
     }
 
     public void BackAnimation()
     {
-        canvas.GetComponent<Animator>().SetBool("ClearStatus", false);
+        if(canvas != null)
+        {
+            canvas.GetComponent<Animator>().SetBool("ClearStatus", false);
+            canvas.GetComponent<TransShumi>().SetGoFlag(true);
+        }
         GetComponent<Animator>().SetBool("UpFlag", false);
-        canvas.GetComponent<TransShumi>().SetGoFlag(true);
     }
 
     public void SetScrollPosition()

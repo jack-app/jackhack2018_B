@@ -91,6 +91,7 @@ GameObject:
   - component: {fileID: 222947801105085574}
   - component: {fileID: 114988171942795192}
   - component: {fileID: 114171300786753764}
+  - component: {fileID: 114414304964073264}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -147,7 +148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u7D42\u4E86\u3067\u3059\uFF01\n\u304A\u75B2\u308C\u69D8\u3067\u3057\u305F\u3002"
+  m_Text: "\u7D42\u4E86\u3067\u3059\uFF01\n\u304A\u75B2\u308C\u69D8\u3067\u3057\u305F\u3002\n(\u30C1\u30E3\u30C3\u30C8\u304C\u3067\u304D\u308B\u3088\u3046\u306B\u306A\u308A\u307E\u3059)"
 --- !u!114 &114171300786753764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -186,9 +187,31 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 114988171942795192}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 114414304964073264}
+        m_MethodName: SceneLoad
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!114 &114414304964073264
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1884282049610112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 410ad1f5f16a4344dbf39644b7ef9d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114447264088900232
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -279,7 +302,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 5e1f9ca4762deb244a0248e7fd3a2cc1, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -291,7 +314,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\u623B\u308B"
+  m_Text: "\u30DB\u30FC\u30E0\u306B\u623B\u308B"
 --- !u!114 &114988171942795192
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -311,8 +334,8 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: ec7bf0bf5f6049b439a44d19aa12d55b, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -380,7 +403,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -0.0024986, y: 0.000057836987}
-  m_SizeDelta: {x: 650.5, y: 415.8}
+  m_SizeDelta: {x: 650.5, y: 595}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224258865976189250
 RectTransform:
