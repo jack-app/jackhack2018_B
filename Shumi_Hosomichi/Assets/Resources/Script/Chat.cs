@@ -14,8 +14,11 @@ public class Chat : MonoBehaviour {
  	[SerializeField] RectTransform botElement;
 	[SerializeField] Text elementbotText;
 private int i;
+private int num=0;
 private string bot;
-public ScrollRect ScrollRect;
+
+
+
 
 	// テキスト入力フィールド
 	[SerializeField] InputField input;
@@ -31,9 +34,10 @@ public ScrollRect ScrollRect;
 	{
 		// 入力フィールドを元に複製元のデータを改変
 		// 入力フィールドは初期化する
+		num++;
 		elementOriginalText.text = input.text;
 		input.text = string.Empty;
-		i=Random.Range(0,3);
+		i=num%3;
 		bot = bottext[i];
 		elementbotText.text = bot;
 
@@ -53,7 +57,17 @@ public ScrollRect ScrollRect;
 		botelement.SetParent (content, false);
 		botelement.SetAsLastSibling ();
 		botelement.gameObject.SetActive (true);
-		ScrollRect.verticalNormalizedPosition = 0; //ここでスクロールを一番下にする
+
+		/*Vector3 Content = transform.position;
+		Vector3 ScrollView = transform.position;
+
+		if(Content.y>ScrollView.y){
+
+		}*/
+
+
+
+
 
 
 
