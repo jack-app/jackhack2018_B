@@ -17,6 +17,9 @@ private int i;
 private int num=0;
 private string bot;
 
+
+
+
 	// テキスト入力フィールド
 	[SerializeField] InputField input;
 	private string[] bottext={"いつもありがとうございます。","ただいま対応しておりません。","またの機会にご利用ください。"};
@@ -54,6 +57,16 @@ private string bot;
 		botelement.SetParent (content, false);
 		botelement.SetAsLastSibling ();
 		botelement.gameObject.SetActive (true);
+
+		/*Vector3 Content = transform.position;
+		Vector3 ScrollView = transform.position;
+
+		if(Content.y>ScrollView.y){
+
+		}*/
+
+
+
 
 
 
