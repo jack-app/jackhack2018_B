@@ -13,13 +13,17 @@ public class Chat : MonoBehaviour {
 	[SerializeField] Text elementOriginalText;
  	[SerializeField] RectTransform botElement;
 	[SerializeField] Text elementbotText;
+    [SerializeField] ChangeChat contentChat;
 private int i;
+private int num=0;
 private string bot;
-public ScrollRect ScrollRect;
+
+
+
 
 	// テキスト入力フィールド
 	[SerializeField] InputField input;
-	private string[] bottext={"いつもありがとうございます。","ただいま対応しておりません。","またの機会にご利用ください。"};
+	private string[] bottext={"はじめまして！興味を持ってくれてありがとうございます！","10杯で3000円ほどの材料が必要かな～","ぜひオープンコーラライフを楽しんで！"};
 	void Awake()
 	{
 		//（shiro）最初は何も表示されていないようにする
@@ -29,11 +33,12 @@ public ScrollRect ScrollRect;
 
 	public void OnSubmit()
 	{
-		// 入力フィールドを元に複製元のデータを改変
-		// 入力フィールドは初期化する
+        // 入力フィールドを元に複製元のデータを改変
+        // 入力フィールドは初期化する
+        i = num % 3;
+        num++;
 		elementOriginalText.text = input.text;
 		input.text = string.Empty;
-		i=Random.Range(0,3);
 		bot = bottext[i];
 		elementbotText.text = bot;
 
@@ -53,7 +58,19 @@ public ScrollRect ScrollRect;
 		botelement.SetParent (content, false);
 		botelement.SetAsLastSibling ();
 		botelement.gameObject.SetActive (true);
-		ScrollRect.verticalNormalizedPosition = 0; //ここでスクロールを一番下にする
+
+        /*Vector3 Content = transform.position;
+		Vector3 ScrollView = transform.position;
+
+		if(Content.y>ScrollView.y){
+
+		}*/
+
+        contentChat.flag = true;
+
+
+
+
 
 
 
